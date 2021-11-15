@@ -7,10 +7,10 @@ import Footer from "@components/Footer";
 import './index.less'
 
 const Video = () => (
-    <div className="detail">
+    <div className="video">
         <Row className="comm-main" justify="center">
             <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}>
-                博客详情
+                视频列表
             </Col>
             <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
                 <Author />

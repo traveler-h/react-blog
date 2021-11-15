@@ -1,16 +1,16 @@
 import { Col, Row } from "antd";
 import React from "react";
 
-import Advertisement from "@components/Advertisement";
 import Author from "@components/Author";
-import Footer from "@components/Footer";
 import './index.less'
+import Advertisement from "@components/Advertisement";
+import Footer from "@components/Footer";
 
-const Video = () => (
-    <div className="detail">
+const Life = () => (
+    <div className="life">
         <Row className="comm-main" justify="center">
             <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}>
-                博客详情
+                生活帖
             </Col>
             <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
                 <Author />
@@ -21,4 +21,4 @@ const Video = () => (
     </div>
 )
 
-export default Video
+export default Life

@@ -5,7 +5,9 @@ import type { RouteObject } from "react-router-dom";
 import { NavLink, Route, Routes, useRoutes } from 'react-router-dom'
 import './index.less'
 
-import Home from '../../pages/home'
+import Home from '@pages/home'
+import Video from '@pages/video'
+import Life from '@pages/life'
 
 const Header = () => {
 
@@ -15,10 +17,10 @@ const Header = () => {
             element: <Home />,
         }, {
             path: '/video',
-            // element: <Home/>
+            element: <Video/>
         }, {
             path: '/life',
-            // element: <Home/>
+            element: <Life/>
         }
     ]
 

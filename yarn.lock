@@ -1497,7 +1497,7 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@pmmmwh/react-refresh-webpack-plugin@0.4.3":
+"@pmmmwh/react-refresh-webpack-plugin@0.4.3", "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"
   resolved "https://registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz"
   integrity sha512-br5Qwvh8D2OQqSXpd1g/xqXKnK0r+Jz6qVKBbWmpUcrbGOxUrf39V5oZ1876084CGn18uMdR5uvPqBv9UqtBjQ==
@@ -1836,6 +1836,11 @@
   version "3.0.3"
   resolved "https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.3.tgz"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
+
+"@types/mockjs@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.nlark.com/@types/mockjs/download/@types/mockjs-1.0.4.tgz"
+  integrity sha1-5waVHV4ztPCku3Ox+LEk4m8IHeA=
 
 "@types/node@*":
   version "14.14.31"
@@ -2686,7 +2691,7 @@ axe-core@^4.0.2:
 
 axios@^0.24.0:
   version "0.24.0"
-  resolved "https://registry.npmmirror.com/axios/download/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
+  resolved "https://registry.npmmirror.com/axios/download/axios-0.24.0.tgz"
   integrity sha1-gE5voeS5xSiFAd2d/1anoJQNINY=
   dependencies:
     follow-redirects "^1.14.4"
@@ -3772,6 +3777,11 @@ cosmiconfig@^7.0.1:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+craco-alias@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.nlark.com/craco-alias/download/craco-alias-3.0.1.tgz#45e5cb338b222a7f62d17e398b54aff7cf1572af"
+  integrity sha1-ReXLM4siKn9i0X45i1Sv988Vcq8=
+
 craco-antd@^1.19.0:
   version "1.19.0"
   resolved "https://registry.npm.taobao.org/craco-antd/download/craco-antd-1.19.0.tgz"
@@ -3780,6 +3790,14 @@ craco-antd@^1.19.0:
     babel-plugin-import "^1.13.1"
     craco-less "1.17.0"
     less-vars-to-js "^1.3.0"
+
+craco-fast-refresh@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.nlark.com/craco-fast-refresh/download/craco-fast-refresh-1.1.0.tgz#0e672ffb63b7428c8e79566e81d8107f10291ac6"
+  integrity sha1-Dmcv+2O3QoyOeVZugdgQfxApGsY=
+  dependencies:
+    "@pmmmwh/react-refresh-webpack-plugin" "^0.4.3"
+    react-refresh "^0.10.0"
 
 craco-less@1.17.0:
   version "1.17.0"
@@ -5299,14 +5317,9 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
-follow-redirects@^1.0.0:
-  version "1.13.2"
-  resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.13.2.tgz"
-  integrity sha512-6mPTgLxYm3r6Bkkg0vNM0HTjfGrOEtsfbhagQvbxDEsEkpNhw582upBaoRZylzen6krEmxXJgt9Ju6HiI4O7BA==
-
-follow-redirects@^1.14.4:
+follow-redirects@^1.0.0, follow-redirects@^1.14.4:
   version "1.14.5"
-  resolved "https://registry.npmmirror.com/follow-redirects/download/follow-redirects-1.14.5.tgz?cache=0&sync_timestamp=1635857764332&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
+  resolved "https://registry.npmmirror.com/follow-redirects/download/follow-redirects-1.14.5.tgz?cache=0&sync_timestamp=1635857764332&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.14.5.tgz"
   integrity sha1-8JpYSJgdPHcrU5Iwl3hSP42Fw4E=
 
 for-in@^1.0.2:
@@ -5707,7 +5720,7 @@ hex-color-regex@^1.1.0:
 
 history@^5.1.0:
   version "5.1.0"
-  resolved "https://registry.npmmirror.com/history/download/history-5.1.0.tgz#2e93c09c064194d38d52ed62afd0afc9d9b01ece"
+  resolved "https://registry.npmmirror.com/history/download/history-5.1.0.tgz"
   integrity sha1-LpPAnAZBlNONUu1ir9CvydmwHs4=
   dependencies:
     "@babel/runtime" "^7.7.6"
@@ -9720,9 +9733,9 @@ react-app-polyfill@^2.0.0:
     whatwg-fetch "^3.4.1"
 
 react-app-rewire-alias@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.npmmirror.com/react-app-rewire-alias/download/react-app-rewire-alias-1.1.4.tgz#2e9a90765659eadbdfd75514739e3c7bc628adbc"
-  integrity sha1-LpqQdlZZ6tvf11UUc548e8Yorbw=
+  version "1.1.5"
+  resolved "https://registry.npmmirror.com/react-app-rewire-alias/download/react-app-rewire-alias-1.1.5.tgz"
+  integrity sha512-jy4glytSWEJ3R+49aqwKEYn59bmwGI4DPqtZuJYEVc6FcqIFOjSqBiEuijsBF7INUmOeGWR7/DwUAyHqa81mgg==
 
 react-dev-utils@^11.0.3:
   version "11.0.4"
@@ -9778,22 +9791,30 @@ react-is@^17.0.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.1.tgz"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-refresh@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.npmmirror.com/react-refresh/download/react-refresh-0.10.0.tgz?cache=0&sync_timestamp=1636734515235&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Freact-refresh%2Fdownload%2Freact-refresh-0.10.0.tgz#2f536c9660c0b9b1d500684d9e52a65e7404f7e3"
+  integrity sha1-L1NslmDAubHVAGhNnlKmXnQE9+M=
+
 react-refresh@^0.8.3:
   version "0.8.3"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
 react-router-dom@^6.0.0-beta.8:
-  version "6.0.0-beta.8"
-  resolved "https://registry.npmmirror.com/react-router-dom/download/react-router-dom-6.0.0-beta.8.tgz?cache=0&sync_timestamp=1636499761778&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Freact-router-dom%2Fdownload%2Freact-router-dom-6.0.0-beta.8.tgz#911c2dcaa746b589fb2085cfe41404b808629a76"
-  integrity sha1-kRwtyqdGtYn7IIXP5BQEuAhimnY=
+  version "6.0.2"
+  resolved "https://registry.npmmirror.com/react-router-dom/download/react-router-dom-6.0.2.tgz?cache=0&sync_timestamp=1636499761778&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Freact-router-dom%2Fdownload%2Freact-router-dom-6.0.2.tgz"
+  integrity sha512-cOpJ4B6raFutr0EG8O/M2fEoyQmwvZWomf1c6W2YXBZuFBx8oTk/zqjXghwScyhfrtnt0lANXV2182NQblRxFA==
   dependencies:
-    react-router "6.0.0-beta.8"
+    history "^5.1.0"
+    react-router "6.0.2"
 
-react-router@6.0.0-beta.8, react-router@^6.0.0-beta.8:
-  version "6.0.0-beta.8"
-  resolved "https://registry.npmmirror.com/react-router/download/react-router-6.0.0-beta.8.tgz#99d570b0eaadac9af590e08fd8229d8c3f5558fd"
-  integrity sha1-mdVwsOqtrJr1kOCP2CKdjD9VWP0=
+react-router@6.0.2, react-router@^6.0.0-beta.8:
+  version "6.0.2"
+  resolved "https://registry.npmmirror.com/react-router/download/react-router-6.0.2.tgz"
+  integrity sha512-8/Wm3Ed8t7TuedXjAvV39+c8j0vwrI5qVsYqjFr5WkJjsJpEvNSoLRUbtqSEYzqaTUj1IV+sbPJxvO+accvU0Q==
+  dependencies:
+    history "^5.1.0"
 
 react-scripts@4.0.3:
   version "4.0.3"

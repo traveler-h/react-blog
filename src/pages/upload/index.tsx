@@ -1,5 +1,5 @@
 import React from "react";
-import { getFiles } from "../../api/upload";
+import { getFiles } from "@/api/list";
 import './index.less'
 
 const Upload =() => {

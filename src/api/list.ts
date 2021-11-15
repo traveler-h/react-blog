@@ -1,4 +1,4 @@
-import request from '../axios/require'
+import request from '@request/require'
 
 export function getFiles() {
   return request({

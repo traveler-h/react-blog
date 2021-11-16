@@ -1,0 +1,47 @@
+.header {
+  background-color: #fff;
+  font-size: @font-small;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  min-height: 5rem;
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    .logo-name {
+      font-size: @font-big;
+      color: @primary-color;
+      margin-left: 2rem;
+    }
+
+    .logo-desc {
+      color: @desc-color;
+      margin-left: .8rem;
+    }
+
+  }
+
+  .main-menu {
+    display: flex;
+    justify-content: space-around;
+
+    .menu-item {
+      margin-left: 2rem;
+    }
+  }
+}
+
+.panel {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  padding-top: 5rem;
+
+  .panel-body {
+    width: 100%;
+    height: 100%;
+  }
+}

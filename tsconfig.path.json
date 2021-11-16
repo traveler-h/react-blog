@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "mock": ["mock"],
+      "@/*": ["src/*"],
+      "@api/*": ["src/api/*"],
+      "@components/*":["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@request/*": ["src/request/*"],
+      "@store/*": ["src/redux/*"]
+    }
+  }
+}

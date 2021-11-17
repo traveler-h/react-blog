@@ -1,37 +1,34 @@
 import React from 'react'
 import { Row, Col, Menu } from 'antd'
 import { HomeOutlined, VideoCameraOutlined, FileTextOutlined } from '@ant-design/icons'
-import type { RouteObject } from "react-router-dom";
-import { NavLink, Route, Routes, useRoutes } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './index.less'
 
-import Home from '@pages/home'
-import Detail from '@pages/detail'
-import Video from '@pages/video'
-import Life from '@pages/life'
+// import type { RouteObject } from "react-router-dom";
+// import { Route, Routes, useRoutes } from 'react-router-dom'
+// let routersList: RouteObject[] = [
+    //     {
+    //         path: '/',
+    //         element: <Home />,
+    //     }, {
+    //         path: '/video',
+    //         element: <Video/>
+    //     }, {
+    //         path: '/life',
+    //         element: <Life/>
+    //     }, {
+    //         path: '/detail/:id',
+    //         element: <Detail/>
+    //     }
+    // ]
 
+    // let routers = useRoutes(routersList)
+    // {routers}
 const Header = () => {
 
-    let routersList: RouteObject[] = [
-        {
-            path: '/',
-            element: <Home />,
-        }, {
-            path: '/video',
-            element: <Video/>
-        }, {
-            path: '/life',
-            element: <Life/>
-        }, {
-            path: '/detail/:id',
-            element: <Detail/>
-        }
-    ]
-
-    let routers = useRoutes(routersList)
+    
 
     return (
-        <div>
             <Row className='header' justify='center' align='middle'>
                 <Col xs={24} sm={24} md={14} xl={10} className='logo'>
                     <span className='logo-name'>Alina</span>
@@ -60,17 +57,6 @@ const Header = () => {
                     </Menu>
                 </Col>
             </Row>
-            <div className="panel">
-                <div className="panel-body">
-                    {/* 注册路由 方法一 */}
-                    {/* <Routes>
-                        <Route path="/" element={<Home />} />
-                    </Routes> */}
-                    {/* 方法二 */}
-                    {routers}
-                </div>
-            </div>
-        </div>
     )
 }
 

@@ -1,15 +1,16 @@
-import React from 'react';
+import Header from '@components/Header';
 import { BrowserRouter } from 'react-router-dom';
 import './App.less';
-import Header from './components/Header';
-import routers from './router';
+import Routers from './router';
+
 
 function App() {
+  // console.log(routers);
   return (
     <BrowserRouter>
+      <Header/>
       <div className="App">
-        {/* {routers} */}
-        <Header/>
+          <Routers/>
       </div>
     </BrowserRouter>
   );

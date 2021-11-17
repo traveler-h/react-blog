@@ -54,7 +54,7 @@ const Video = () => {
                                     </div>
                                 </div>
                                 <div className="list-centent">
-                                    <video poster={item.poster} controls width={800} src={item.video} className="video-js" />
+                                    <video poster={item.poster} controls width={"100%"} src={item.video} className="video-js" />
                                 </div>
                             </List.Item>
                         )}

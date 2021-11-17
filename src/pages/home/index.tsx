@@ -1,10 +1,11 @@
 import { Col, Row, List } from "antd";
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 
 import { getFiles } from "@/api/file";
 
 import './index.less'
 import { EyeOutlined, FieldTimeOutlined, UserOutlined } from "@ant-design/icons";
+import Header from '@components/Header';
 import Author from "@components/Author";
 import Advertisement from "@components/Advertisement";
 import Footer from "@components/Footer"
